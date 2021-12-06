@@ -1,3 +1,4 @@
+Demo https://andribob26.github.io/aplikasi-todo-sederhana-vue3/
 # todo_sederhana
 
 ## Project setup
