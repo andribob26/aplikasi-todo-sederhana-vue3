@@ -48,13 +48,16 @@ export default {
             inputan.value = ""
         }
         const hapusTodo = (val)=>{
-            let removeIndex = todo.map(item => { 
+            let index = todo.map(item => { 
                     return item.id 
                 }).indexOf(val);
-            todo.splice(removeIndex, 1);
+            todo.splice(index, 1);
         }
         const isDoneTodo = (val)=>{
-            todo[val.index].done = val.done
+            let index = todo.map(item => { 
+                    return item.id 
+                }).indexOf(val.id);
+            todo[index].done = val.done
         }
         const muncul = ()=>{
             onShow.value = !onShow.value
